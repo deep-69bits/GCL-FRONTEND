@@ -25,14 +25,9 @@ const NavItems = [
 ];
 const Header = () => {
   return (
-    <div className="bg-black sticky border-b border-b-white text-white px-[120px] flex justify-between items-center">
-      <div className="border-r border-r-white px-6 py-2">
-        <Image
-          src={"/assests/header-logo.png"}
-          alt=""
-          width={120}
-          height={80}
-        />
+    <div className="bg-black sticky border-b border-b-white text-white  flex justify-between items-center">
+      <div className="border-r border-r-white px-10 py-2">
+        <Image src={"/Logo_Coloured.svg"} alt="" width={120} height={80} />
       </div>
       <div className="w-full flex flex-col text-center item-center justify-center">
         <div className="border-b-white text-transparent py-2">{"."}</div>
@@ -47,8 +42,8 @@ const Header = () => {
           })}
         </div>
       </div>
-      <div className="border-l border-l-white px-6 py-6">
-        <li className="flex gap-x-2 item-center">
+      <div className="border-l   border-l-white px-10 py-6">
+        <li className="flex gap-x-2 justify-center item-center">
           <Image
             src={"/assests/icons/tabler_user-filled.svg"}
             alt=""

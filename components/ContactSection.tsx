@@ -6,7 +6,7 @@ const ContactSection = () => {
   return (
     <div className="flex flex-col items-center gap-8 text-white">
       <Image
-        className="w-full absolute z-0"
+        className="w-full max-w-[2000px] absolute z-0"
         src="/bg2.svg"
         alt=""
         width={100}
@@ -17,8 +17,8 @@ const ContactSection = () => {
         <div className="text-[#E6FF00] pt-8 pb-4">
           We’d love to hear from you. Please fill out this form.
         </div>
-        <div className="w-1/2 flex flex-col gap-6 ">
-          <div className="grid grid-flow-row grid-cols-2 gap-10">
+        <div className="lg:w-1/2 w-full lg:px-0 px-4 flex flex-col gap-6 ">
+          <div className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="flex flex-col gap-2">
               <label htmlFor="firstName">First Name</label>
               <input

@@ -65,9 +65,9 @@ const PrizesSection = () => {
     },
   ];
   return (
-    <div className="bg-white  flex flex-col items-center  gap-8  pt-14 pb-10 px-10 text-black">
+    <div className="bg-white  flex flex-col items-center  gap-8  pt-14 pb-10 lg:px-10 px-4 text-black">
       <Title variant="purple">PRIZES</Title>
-      <div className="grid grid-flow-row grid-cols-3 w-full">
+      <div className="grid grid-flow-row lg:grid-cols-3 grid-cols-1 w-full">
         {Prizes.map((item, index) => {
           return (
             <GradientBorder key={index}>
@@ -92,7 +92,7 @@ const PrizesSection = () => {
           );
         })}
       </div>
-      <div className="flex flex-col w-1/2 text-center mt-10 gap-8">
+      <div className="flex flex-col lg:w-1/2 w-full text-center mt-10 gap-8">
         {SubItems.map((item, index) => {
           return (
             <div key={index} className="flex flex-col gap-4">

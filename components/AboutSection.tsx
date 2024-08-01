@@ -4,16 +4,16 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <div className="bg-white text-black flex flex-col  gap-8 pt-14 pb-10 px-10 ">
+    <div className="bg-white text-black flex flex-col gap-8 pt-14 pb-10 lg:px-10 px-4 ">
       <Title variant="purple">ABOUT</Title>
-      <div className="text-center text-lg w-1/2 m-auto">
+      <div className="text-center text-lg lg:w-1/2 w-full m-auto">
         The Next Move is a global chess innovation challenge that invites
         creative minds from all backgrounds to reimagine the future of chess.
         This competition is your opportunity to bring fresh ideas to one of the
         worlds oldest games, pushing the boundaries of technology, strategy, and
         engagement in the chess world
       </div>
-      <div className="w-1/2 text-lg text-center m-auto">
+      <div className="lg:w-1/2 w-full text-lg text-center m-auto">
         <span className="font-bold">#TheNextMove</span>
         challenge welcomes everyone with the zeal to
         <span className="font-bold">#ReimagineTheGame .</span>

@@ -56,6 +56,12 @@ const Members = [
     image:
       "https://st.adda247.com/https://currentaffairs.adda247.com/wp-content/uploads/multisite/sites/5/2021/08/17064940/image30-1200x900-1.png",
   },
+  {
+    name: "Peeyush Dubey",
+    position: "CMO at Tech Mahindra",
+    image:
+      "https://st.adda247.com/https://currentaffairs.adda247.com/wp-content/uploads/multisite/sites/5/2021/08/17064940/image30-1200x900-1.png",
+  },
 ];
 
 const MentorSection = () => {

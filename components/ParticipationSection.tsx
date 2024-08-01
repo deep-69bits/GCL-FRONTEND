@@ -8,8 +8,8 @@ const YellowText = ({ children }: { children: React.ReactNode }) => {
 
 const ParticipationSection = () => {
   return (
-    <div className="bg-black border-b border-white pt-14 flex flex-col items-center pb-10 px-10 text-white">
-      <div className="grid grid-flow-row grid-cols-3">
+    <div className="bg-black border-b border-white pt-14 flex flex-col items-center pb-10 lg:px-10 px-4 text-white">
+      <div className="grid grid-flow-row lg:grid-cols-3 grid-cols-1">
         <div className="px-10 py-10 flex flex-col items-center gap-4">
           <Image
             src={"/participationSVGS/group.svg"}

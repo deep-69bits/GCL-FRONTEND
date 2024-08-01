@@ -37,9 +37,9 @@ const data = [
 ];
 const RegistrationSection = () => {
   return (
-    <div className="py-20 px-10 bg-gradient-to-b from-black via-[#3B193D] to-[#3B193D]">
+    <div className="py-20 lg:px-10 px-4 bg-gradient-to-b from-black via-[#3B193D] to-[#3B193D]">
       <Title>REGISTRATION AND SUBMISSION</Title>
-      <div className="grid grid-flow-row mt-10 grid-cols-3">
+      <div className="grid grid-flow-row mt-10 grid-cols-1 lg:grid-cols-3">
         {data.map((item, index) => {
           return <RegistrationCard data={item} key={index} />;
         })}

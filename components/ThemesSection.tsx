@@ -36,9 +36,9 @@ export const ThemesSection = () => {
     },
   ];
   return (
-    <div className="bg-white pt-14 pb-10 px-10 text-black">
+    <div className="bg-white pt-14 pb-10 lg:px-10 px-4 text-black">
       <Title variant="purple">CHALLENGES AND THEMES</Title>
-      <div className="grid grid-flow-row grid-cols-3 my-10">
+      <div className="grid grid-flow-row lg:grid-cols-3 grid-cols-1 my-10">
         {ThemeItems.map((item, index) => {
           return (
             <div
