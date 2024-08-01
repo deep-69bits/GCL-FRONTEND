@@ -5,7 +5,7 @@ import GradientButton from "./Buttons/GradientButton";
 
 const SponsorSection = () => {
   return (
-    <div className="bg-white  flex flex-col items-center text-center gap-8  pt-14 pb-10 px-10 text-white">
+    <div className="bg-white  flex flex-col items-center text-center gap-8 py-20 px-10 text-white">
       <Title variant="purple">OUR SPONSORS</Title>
       <Image alt="" height={200} width={1400} src={"/sponsors.svg"} />
       <h6 className="text-black">

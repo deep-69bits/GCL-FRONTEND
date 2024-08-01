@@ -67,16 +67,16 @@ const KnowledgeSection = () => {
   ];
 
   return (
-    <div className="bg-black flex flex-col items-center gap-8 pt-14 pb-10 lg:px-20 px-4 text-white">
+    <div className="bg-black flex flex-col items-center gap-8 py-20 lg:px-20 px-4 text-white">
       <Title>KNOWLEDGE HUB</Title>
       <div className="text-[#E6FF00] text-center">
         Explore our curated resources and learning materials, including links to
         relevant articles, videos, and tools!
       </div>
-      <Carousel>
+      <Carousel className="lg:w-full w-[80%]">
         <CarouselContent className="gap-x-4">
           {cardsData.map((card, index) => (
-            <CarouselItem key={index} className="basis-1/4">
+            <CarouselItem key={index} className="lg:basis-1/4 ">
               <Card
                 imageUrl={card.imageUrl}
                 title={card.title}

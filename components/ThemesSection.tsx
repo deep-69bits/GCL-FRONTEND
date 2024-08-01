@@ -36,7 +36,7 @@ export const ThemesSection = () => {
     },
   ];
   return (
-    <div className="bg-white pt-14 pb-10 lg:px-10 px-4 text-black">
+    <div className="bg-white py-20 lg:px-10 px-4 text-black">
       <Title variant="purple">CHALLENGES AND THEMES</Title>
       <div className="grid grid-flow-row lg:grid-cols-3 grid-cols-1 my-10">
         {ThemeItems.map((item, index) => {
@@ -46,7 +46,9 @@ export const ThemesSection = () => {
               className="flex flex-col items-center px-10 border border-[#ED00B8] py-10 gap-4 text-center"
             >
               <Image src={item.logo} alt="" width={80} height={80} />
-              <h5 className="text-lg text-[#4E16BF] font-bold ">{item.title}</h5>
+              <h5 className="text-lg text-[#4E16BF] font-bold ">
+                {item.title}
+              </h5>
               <h6 className="text-sm font-[400]">{item.description}</h6>
             </div>
           );

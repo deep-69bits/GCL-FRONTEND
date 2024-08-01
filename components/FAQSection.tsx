@@ -81,7 +81,7 @@ const FAQSection = () => {
                 else setFaqNumber(-1);
               }}
               key={index}
-              className="cursor-pointer "
+              className="cursor-pointer"
             >
               <div className="text-left flex justify-between px-4 py-3 w-full bg-[#281A48]">
                 <span>{item.question}</span>

@@ -65,7 +65,7 @@ const PrizesSection = () => {
     },
   ];
   return (
-    <div className="bg-white  flex flex-col items-center  gap-8  pt-14 pb-10 lg:px-10 px-4 text-black">
+    <div className="bg-white  flex flex-col items-center  gap-8  py-20 lg:px-10 px-4 text-black">
       <Title variant="purple">PRIZES</Title>
       <div className="grid grid-flow-row lg:grid-cols-3 grid-cols-1 w-full">
         {Prizes.map((item, index) => {
@@ -80,11 +80,7 @@ const PrizesSection = () => {
                 </div>
                 <div className="w-fit font-light m-auto">
                   {item.points.map((it, ind) => {
-                    return (
-                      <li key={ind}>
-                        {it}
-                      </li>
-                    );
+                    return <li key={ind}>{it}</li>;
                   })}
                 </div>
               </div>

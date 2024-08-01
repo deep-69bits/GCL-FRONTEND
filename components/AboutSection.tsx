@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <div className="bg-white text-black flex flex-col gap-8 pt-14 pb-10 lg:px-10 px-4 ">
+    <div className="bg-white text-black flex flex-col gap-8 py-20 lg:px-10 px-4 ">
       <Title variant="purple">ABOUT</Title>
       <div className="text-center text-lg lg:w-1/2 w-full m-auto">
         The Next Move is a global chess innovation challenge that invites

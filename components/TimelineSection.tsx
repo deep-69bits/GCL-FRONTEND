@@ -172,7 +172,7 @@ const timelines = [
 
 const TimelineSection = () => {
   return (
-    <div className="bg-black border-b border-white pt-14 flex flex-col items-center pb-10 lg:px-10 px-4 text-white">
+    <div className="bg-black border-b border-white  flex flex-col items-center py-20 lg:px-10 px-4 text-white">
       <Title>TIMELINE AND STAGES</Title>
       <div className="grid grid-flow-row lg:grid-cols-4 grid-cols-1 mt-10 gap-10">
         {timelines.map((timeline, index) => (

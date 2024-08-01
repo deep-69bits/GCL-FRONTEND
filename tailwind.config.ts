@@ -20,6 +20,7 @@ const config = {
     extend: {
       backgroundImage: {
         heroBg: "url('/hackathonBackground.png')",
+        heroMobile: "url('/hero-mobile.jpg')",
       },
       colors: {
         border: "hsl(var(--border))",

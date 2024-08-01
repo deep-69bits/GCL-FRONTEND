@@ -8,8 +8,8 @@ const YellowText = ({ children }: { children: React.ReactNode }) => {
 
 const ParticipationSection = () => {
   return (
-    <div className="bg-black border-b border-white pt-14 flex flex-col items-center pb-10 lg:px-10 px-4 text-white">
-      <div className="grid grid-flow-row lg:grid-cols-3 grid-cols-1">
+    <div className="bg-black border-b border-white py-20 flex flex-col items-center  lg:px-10 px-4 text-white">
+      <div className="grid grid-flow-row lg:grid-cols-3 grid-cols-1 w-full">
         <div className="px-10 py-10 flex flex-col items-center gap-4">
           <Image
             src={"/participationSVGS/group.svg"}
@@ -18,7 +18,7 @@ const ParticipationSection = () => {
             height={40}
           />
           <div className="text-lg font-bold">CAN I PARTICIPATE ?</div>
-          <div className="text-sm">
+          <div className="text-sm flex flex-col justify-center items-center text-center">
             <li>
               <YellowText>Anyone</YellowText> from around the world can register
               for the Hackfest, either individually or in teams (up to 5
@@ -36,7 +36,7 @@ const ParticipationSection = () => {
           </div>
         </div>
 
-        <div className="px-10 py-10 flex flex-col items-center gap-4">
+        <div className="px-10  py-10 flex flex-col items-center gap-4">
           <Image
             src={"/participationSVGS/chess2.svg"}
             alt=""
@@ -44,7 +44,7 @@ const ParticipationSection = () => {
             height={40}
           />
           <div className="text-lg font-bold">WHY SHOULD I PARTICIPATE ?</div>
-          <div className="text-sm">
+          <div className="text-sm flex flex-col justify-center items-center text-center">
             <li>
               GCL’s{" "}
               <YellowText>
@@ -81,7 +81,7 @@ const ParticipationSection = () => {
             height={40}
           />
           <div className="text-lg font-bold">HOW CAN I PARTICIPATE?</div>
-          <div className="text-sm">
+          <div className="text-sm flex flex-col justify-center items-center text-center">
             <li>
               <YellowText>Register</YellowText> for the Hackfest between{" "}
               <YellowText> May 12th and May 31st, </YellowText> open to
