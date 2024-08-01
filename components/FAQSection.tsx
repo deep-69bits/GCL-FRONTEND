@@ -72,7 +72,7 @@ const FAQSection = () => {
   return (
     <div className="bg-white  flex flex-col items-center text-center gap-8  pt-14 pb-16 lg:px-10 px-4 text-white">
       <Title variant="purple">STILL HAVE DOUBTS? FAQS</Title>
-      <div className="grid grid-flow-row  lg:grid-cols-2 grid-cols-1 w-full gap-10 gap-x-20">
+      <div className="grid grid-flow-row  lg:grid-cols-2 grid-cols-1 w-full lg:gap-10 gap-6 gap-x-20">
         {FAQS.map((item, index) => {
           return (
             <div

@@ -86,7 +86,7 @@ const MentorSection = () => {
   return (
     <div className="flex flex-col bg-white items-center gap-8 text-white">
       <div className="z-10 py-20 flex w-full flex-col items-center">
-        <Title variant="purple">MEET THE JURY</Title>
+        <Title variant="purple">MEET THE MENTORS</Title>
         <Carousel className="lg:w-[92%] w-[75%] pt-8">
           <CarouselContent className="gap-x-4">
             {Members.map((card, index) => (

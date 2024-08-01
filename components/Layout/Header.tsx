@@ -118,16 +118,18 @@ const Header = () => {
       </div>
 
       {menuOpen ? (
-        <div className="bg-black  sticky border-b  text-white   flex lg:hidden justify-between items-center">
+        <div className="bg-black  sticky border-b  text-white   flex lg:hidden  ">
           <div className="flex flex-col gap-x-12 w-full justify-center items-center ">
             {NavItems.map((item, index) => {
               return (
                 <li
                   key={index}
-                  className="flex border-b border-white text-center justify-center py-2 w-full gap-x-2 item-center"
+                  className="flex border-b border-white py-2 w-full"
                 >
+                  <div className="px-4 items-center flex gap-x-2 justify-start">
                   <Image src={item.icon} alt="" width={20} height={20} />
                   <span className="text-lg font-[500]">{item.name}</span>
+                  </div>
                 </li>
               );
             })}
