@@ -12,7 +12,7 @@ const ContactSection = () => {
         width={100}
         height={100}
       />
-      <div className="lg:pt-60 pt-20 z-10 lg:pb-60 pb-20 flex w-full flex-col items-center">
+      <div className=" pt-20 z-10  pb-20 flex w-full flex-col items-center">
         <Title>GET IN TOUCH</Title>
         <div className="text-[#E6FF00] pt-8 pb-4">
           We’d love to hear from you. Please fill out this form.
