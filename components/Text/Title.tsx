@@ -13,7 +13,15 @@ const Title = ({ children, variant }: any) => {
         <h2 className="bg-gradient-to-r from-[#D500AB] lg:text-5xl text-3xl  to-[#7F60F9] inline-block text-transparent bg-clip-text">
           <span className={brunoAceSC.className}>HACKATHON</span>
         </h2>
-        <h3 className="bg-gradient-to-r from-[#2D1C42] lg:text-5xl text-3xl  to-[#ED00B8] block text-transparent bg-clip-text">
+        <h3 className="bg-[#ED00B8] lg:text-5xl text-3xl   block text-transparent bg-clip-text">
+          <span className={urbanist.className}>{children}</span>
+        </h3>
+      </div>
+    );
+  if (variant == "pink")
+    return (
+      <div className="text-center">
+        <h3 className="bg-[#ED00B8] lg:text-5xl text-3xl   block text-transparent bg-clip-text">
           <span className={urbanist.className}>{children}</span>
         </h3>
       </div>

@@ -8,8 +8,8 @@ const RegistrationCard = ({
   data: { title: string; description: string; image: string };
 }) => {
   return (
-    <div className="border border-[#ED00B8] text-center flex flex-col items-center gap-3 py-10 text-white">
-      <Image src={data.image} alt="" width={80} height={80} className="mb-4" />
+    <div className="border border-[#ED00B8] text-center flex flex-col items-center gap-3 py-10 text-black">
+      <Image src={data.image}  alt="" width={80} height={80} className="mb-4" />
       <div className="text-xl font-bold">{data.title}</div>
       <div className="w-2/3">{data.description}</div>
     </div>
@@ -37,8 +37,8 @@ const data = [
 ];
 const RegistrationSection = () => {
   return (
-    <div className="py-20 lg:px-10 px-4 bg-gradient-to-b from-black via-[#3B193D] to-[#3B193D]">
-      <Title>REGISTRATION AND SUBMISSION</Title>
+    <div className="py-20 lg:px-10 px-4 bg-white">
+      <Title variant="pink">REGISTRATION AND SUBMISSION</Title>
       <div className="grid grid-flow-row mt-10 grid-cols-1 lg:grid-cols-3">
         {data.map((item, index) => {
           return <RegistrationCard data={item} key={index} />;

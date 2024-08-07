@@ -2,6 +2,9 @@ import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import FAQSection from "@/components/FAQSection";
 import HeroSection from "@/components/HeroSection";
+import Hero from "@/components/Home/Hero";
+import Players from "@/components/Home/Players";
+import Teams from "@/components/Home/Teams";
 import KnowledgeSection from "@/components/KnowledgeSection";
 import LabelStripSection from "@/components/LabelStripSection";
 import Layout from "@/components/Layout/Layout";
@@ -9,6 +12,7 @@ import MentorSection from "@/components/MentorsSection";
 import ParticipationSection from "@/components/ParticipationSection";
 import PrizesSection from "@/components/PrizesSection";
 import RegistrationSection from "@/components/RegistrationSection";
+import ShortlistedTeams from "@/components/ShortlistedTeams";
 import SponsorSection from "@/components/SponsorSection";
 import TeamSection from "@/components/TeamSection";
 import { ThemesSection } from "@/components/ThemesSection";
@@ -72,21 +76,9 @@ export default function Home() {
   return (
     <main className="bg-black">
       <Layout>
-        <HeroSection />
-        <LabelStripSection labels={timeLabels} />
-        <AboutSection />
-        <ParticipationSection />
-        <TimelineSection />
-        <LabelStripSection labels={formatLabels} />
-        <ThemesSection />
-        <RegistrationSection/>
-        <PrizesSection />
-        <TeamSection />
-        <MentorSection />
-        <KnowledgeSection />
-        <SponsorSection />
-        <ContactSection />
-        <FAQSection />
+       <Hero/>
+       <Teams/>
+       <Players/>
       </Layout>
     </main>
   );

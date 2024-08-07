@@ -19,8 +19,10 @@ const config = {
     },
     extend: {
       backgroundImage: {
+        seasonBg: "url('/season2Image.jpg')",
         heroBg: "url('/hackathonBackground.png')",
         heroMobile: "url('/hero-mobile.jpg')",
+        footerBg: "url('/foot-bg.png')",
       },
       colors: {
         border: "hsl(var(--border))",

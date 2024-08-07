@@ -70,8 +70,8 @@ const FAQSection = () => {
     },
   ];
   return (
-    <div className="bg-white  flex flex-col items-center text-center gap-8  pt-14 pb-16 lg:px-10 px-4 text-white">
-      <Title variant="purple">STILL HAVE DOUBTS? FAQS</Title>
+    <div className="bg-black  flex flex-col items-center text-center gap-8  pt-14 pb-16 lg:px-10 px-4 text-white">
+      <Title variant="pink">STILL HAVE DOUBTS? FAQS</Title>
       <div className="grid grid-flow-row  lg:grid-cols-2 grid-cols-1 w-full lg:gap-10 gap-6 gap-x-20">
         {FAQS.map((item, index) => {
           return (
@@ -83,7 +83,7 @@ const FAQSection = () => {
               key={index}
               className="cursor-pointer"
             >
-              <div className="text-left flex justify-between px-4 py-3 w-full bg-[#281A48]">
+              <div className="text-left flex justify-between px-4 py-3 w-full bg-white bg-opacity-20">
                 <span>{item.question}</span>
                 <span className={faqNumber === index ? "rotate-180" : ""}>
                   {" "}
@@ -91,7 +91,7 @@ const FAQSection = () => {
                 </span>
               </div>
               {faqNumber === index ? (
-                <div className="text-left py-2 px-4 text-black">
+                <div className="text-left py-2 px-4 text-white">
                   {item.answer}
                 </div>
               ) : null}

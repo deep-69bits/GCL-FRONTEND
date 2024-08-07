@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "./Text/Title";
-import Image from "next/image";
+// import Image from "next/image";
 
 const AboutSection = () => {
   return (
@@ -20,13 +20,13 @@ const AboutSection = () => {
         The possibilities are endless! Were open to any idea that can innovate
         or enhance the world of chess.
       </div>
-      <Image
+      {/* <Image
         alt=""
         className="m-auto"
         height={400}
         width={700}
         src={"/about.svg"}
-      />
+      /> */}
     </div>
   );
 };

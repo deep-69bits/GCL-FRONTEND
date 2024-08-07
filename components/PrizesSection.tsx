@@ -74,9 +74,9 @@ const PrizesSection = () => {
               <div
                 key={index}
                 className={
-                  index % 3 == 2 
-                    ? "px-10 py-10 flex-col gap-4 items-center"
-                    : "px-10 py-10 flex-col gap-4 items-center  border-r-[#7F60F9] border-r-[3px]"
+                  index % 3 == 2
+                    ? "px-10 py-10 flex-col gap-4 items-center sm:border-b-[#7F60F9] sm:border-b-[3px] lg:border-b-0"
+                    : "px-10 py-10 flex-col gap-4 items-center  lg:border-r-[#7F60F9] border-r-[3px] border-b-[#7F60F9] border-b-[3px] lg:border-b-0"
                 }
               >
                 <div className="text-4xl text-[#4E16BF] text-center font-semibold pb-1">

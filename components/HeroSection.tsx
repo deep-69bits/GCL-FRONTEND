@@ -3,10 +3,16 @@ import Image from "next/image";
 import GradientButton from "./Buttons/GradientButton";
 const HeroSection = () => {
   return (
-    <div className="lg:bg-heroBg bg-heroMobile text-white bg-cover  bg-no-repeat lg:py-20  py-10 lg:px-10 px-4">
+    <div className="lg:bg-[#3B193D] bg-heroMobile text-white bg-cover  bg-no-repeat lg:py-20  py-10 lg:px-10 px-4">
       <div className="lg:flex  items-center justify-between ">
         <div className="flex flex-col lg:items-start items-center">
-          <Image src={"/Logo_Coloured.svg"} className="w-40 lg:w-80" alt="" width={300} height={600} />
+          <Image
+            src={"/Logo_Coloured.svg"}
+            className="w-40 lg:w-80"
+            alt=""
+            width={300}
+            height={600}
+          />
           <div className="border border-white mt-4">
             <div className="bg-gradient-to-r font-semibold text-center py-2 from-[#2D1C42] to-[#D500AB]">
               In Partnership With
@@ -24,15 +30,6 @@ const HeroSection = () => {
           width={600}
           height={600}
         />
-        <div className="flex items-center gap-5 flex-col">
-          <h1 className="lg:text-3xl text-xl font-bold text-center">
-            Global Chess <br className="lg:block hidden" /> Innovation Challenge
-          </h1>
-          <div className="flex-col items-center flex gap-2">
-            <GradientButton>Register Now</GradientButton>
-            <div> Last date to register 31ST July</div>
-          </div>
-        </div>
       </div>
     </div>
   );

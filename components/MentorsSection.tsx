@@ -31,7 +31,7 @@ const TeamCard = ({
   );
 };
 
-const Members = [
+const Mentors = [
   {
     name: "Peeyush Dubey",
     position: "CMO at Tech Mahindra",
@@ -89,7 +89,7 @@ const MentorSection = () => {
         <Title variant="purple">MEET THE MENTORS</Title>
         <Carousel className="lg:w-[92%] w-[75%] pt-8">
           <CarouselContent className="gap-x-4">
-            {Members.map((card, index) => (
+            {Mentors.map((card, index) => (
               <CarouselItem key={index} className="lg:basis-1/5 ">
                 <TeamCard member={card} />
               </CarouselItem>
