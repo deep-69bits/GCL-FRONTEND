@@ -28,9 +28,7 @@ const TeamCard = ({
         width={500}
         src={member.image}
       />
-      <div className="bg-white  text-[#ED00B8] z-10 text-lg font-semibold px-16 ">
-        Jury
-      </div>
+     
     </div>
   );
 };
@@ -54,9 +52,7 @@ const MentorCard = ({
         width={500}
         src={member.image}
       />
-      <div className="bg-white  text-[#ED00B8] z-10 text-lg font-semibold px-16 ">
-        Mentor
-      </div>
+      
     </div>
   );
 };
