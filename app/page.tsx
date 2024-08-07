@@ -75,7 +75,7 @@ export default function Home() {
     },
   ];
   return (
-    <main className="bg-black">
+    <main className="bg-black ">
       <Layout>
        <Hero/>
        <Teams/>

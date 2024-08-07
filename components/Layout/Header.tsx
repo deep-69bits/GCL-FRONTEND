@@ -77,7 +77,7 @@ const Header = () => {
         <div className="lg:hidden block py-2 px-3">
           <Image src={"/Logo_Coloured.svg"} alt="" width={120} height={80} />
         </div>
-        <div className="flex items-center gap-2 lg:hidden block px-3">
+        <div className="flex items-center gap-2 lg:hidden  px-3">
           {NavItems.map((item, index) => {
             return (
               <Link
