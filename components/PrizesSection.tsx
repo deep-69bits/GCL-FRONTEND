@@ -85,9 +85,9 @@ const PrizesSection = () => {
                 <div className="text-6xl text-[#4E16BF] text-center font-bold pb-8">
                   ${item.amount}
                 </div>
-                <div className="w-fit font-light">
+                <div className="lg:w-[68%] m-auto font-light">
                   {item.points.map((it, ind) => {
-                    return <li key={ind}>{it}</li>;
+                    return <li className="w-fit text-center m-auto" key={ind}>{it}</li>;
                   })}
                 </div>
               </div>

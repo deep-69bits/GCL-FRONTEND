@@ -14,9 +14,9 @@ const AboutSection = () => {
         engagement in the chess world
       </div>
       <div className="lg:w-1/2 w-full text-lg text-center m-auto">
-        <span className="font-bold">#TheNextMove</span>
+        <span className="font-bold">#TheNextMove </span>
         challenge welcomes everyone with the zeal to
-        <span className="font-bold">#ReimagineTheGame .</span>
+        <span className="font-bold"> #ReimagineTheGame . </span>
         The possibilities are endless! Were open to any idea that can innovate
         or enhance the world of chess.
       </div>

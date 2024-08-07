@@ -84,3 +84,11 @@
   transform: rotateY(360deg);
 }
 
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  /* Add any other styling you need */
+}

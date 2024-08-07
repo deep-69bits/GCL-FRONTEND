@@ -20,25 +20,25 @@ const data = [
     image: "/registration/Idea.svg",
     title: "Idea Submission",
     description:
-      "Gather your team and submit a brief of your idea of what you will be building, before 31st July 2024. ",
+      "Gather your team and submit a brief of your idea of what you will be building.",
   },
   {
     image: "/registration/Skills.svg",
     title: "Mentorship Round",
     description:
-      "Bring your idea to real life through the expertise of our mentors, from 2nd August to 20th August. ",
+      "Bring your idea to real life through the expertise of our mentors. ",
   },
   {
     image: "/registration/Presentation.svg",
     title: "Final Showcase",
     description:
-      "Get ready to present your innovation to the global veterans of Chess and Technology, in September 2024. ",
+      "Get ready to present your innovation to the global veterans of Chess and Technology.",
   },
 ];
 const RegistrationSection = () => {
   return (
     <div className="py-20 lg:px-10 px-4 bg-white">
-      <Title variant="pink">REGISTRATION AND SUBMISSION</Title>
+      <Title variant="pink">HACKATHON ROUNDS</Title>
       <div className="grid grid-flow-row mt-10 grid-cols-1 lg:grid-cols-3">
         {data.map((item, index) => {
           return <RegistrationCard data={item} key={index} />;

@@ -206,7 +206,7 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute bg-black text-white  h-8 w-8 rounded-full",
+        "absolute bg-black text-[#ED00B8]  h-8 w-8 rounded-full border-[#ED00B8] hover:bg-[#ED00B8]",
         orientation === "horizontal"
           ? "-left-12 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -219,7 +219,7 @@ const CarouselPrevious = React.forwardRef<
       <ArrowLeft className="h-4 w-4" />
       <span className="sr-only">Previous slide</span>
     </Button>
-  )
+  );
 })
 CarouselPrevious.displayName = "CarouselPrevious"
 
@@ -235,7 +235,7 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute bg-black text-white h-8 w-8 rounded-full",
+        "absolute bg-black text-[#ED00B8] h-8 w-8 rounded-full border-[#ED00B8] hover:bg-[#ED00B8]",
         orientation === "horizontal"
           ? "-right-12 top-1/2 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -35,9 +36,44 @@ const DiscordIcon = () => {
 
 const Header = () => {
   const pathname = usePathname();
+   const lastScrollTop = useRef(0);
+   const delta = 15;
+   const headerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (headerRef.current) {
+        const st = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (Math.abs(lastScrollTop.current - st) <= delta) {
+          return;
+        }
+
+        if (st > lastScrollTop.current && lastScrollTop.current > 0) {
+          // downscroll code
+          headerRef.current.style.top = "-80px";
+        } else {
+          // upscroll code
+          headerRef.current.style.top = "0px";
+        }
+
+        lastScrollTop.current = st;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-      <div className="bg-black  w-full sticky border-b border-b-[#98A2B3] text-white  lg:flex hidden justify-between items-center">
+      <div
+        ref={headerRef}
+        className="bg-black header  w-full sticky border-b border-b-[#98A2B3] text-white  lg:flex hidden justify-between items-center"
+      >
         <div className="px-10 w-1/3 py-4">
           <Image src={"/Logo_Coloured.svg"} alt="" width={120} height={80} />
         </div>
