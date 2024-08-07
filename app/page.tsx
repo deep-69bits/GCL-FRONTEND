@@ -17,6 +17,7 @@ import SponsorSection from "@/components/SponsorSection";
 import TeamSection from "@/components/TeamSection";
 import { ThemesSection } from "@/components/ThemesSection";
 import TimelineSection from "@/components/TimelineSection";
+import LeagueFormat from "@/components/LeagueFormatSection";
 
 export default function Home() {
   const timeLabels = [
@@ -78,6 +79,7 @@ export default function Home() {
       <Layout>
        <Hero/>
        <Teams/>
+       <LeagueFormat />
        <Players/>
       </Layout>
     </main>
