@@ -6,8 +6,15 @@ const Footer = () => {
     <div className="bg-footerBg  text-white flex-col flex gap-8 items-center py-10 px-4 ">
       <Image src={"/tech-mahindra-footer.svg"} alt="" width={300} height={60} />
       <div className="flex flex-row  text-center items-center gap-10 font-semibold">
-        <li className="flex">Privacy</li>
-        <li className="flex">Terms of use</li>
+        <a
+          href="https://globalchessleague.com/privacy-policy/"
+          target="__blank"
+        >
+          <li className="flex">PRIVACY</li>
+        </a>
+        <a href="https://globalchessleague.com/terms-of-use/" target="__blank">
+          <li className="flex">TERMS OF USE</li>
+        </a>
       </div>
       <div className="flex lg:justify-end justify-center w-full">
         <Image

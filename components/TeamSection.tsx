@@ -37,6 +37,34 @@ const TeamCard = ({
   );
 };
 
+const MentorCard = ({
+  member,
+}: {
+  member: {
+    name: string;
+    position: any;
+    image: string;
+    description: string;
+  };
+}) => {
+  return (
+    <div className="flex flex-col bg-gradient-to-b from-black  to-[#3B193D] items-center gap-2">
+      <div className="font-bold text-xl text-center">{member.name}</div>
+      <div className="font-medium text-center">{member.position}</div>
+      <img
+        alt={member.name}
+        height={200}
+        className="relative -bottom-10 z-0"
+        width={500}
+        src={member.image}
+      />
+      <div className="bg-white  text-[#ED00B8] z-10 text-lg font-semibold px-16 ">
+        Mentor
+      </div>
+    </div>
+  );
+};
+
 const Members = [
   {
     name: "Peeyush Dubey",
@@ -46,30 +74,31 @@ const Members = [
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
   {
-    name: "Peeyush Dubey",
-    position: "CMO at Tech Mahindra",
+    name: "Arkady Dvorkovich",
+    position: "President At FIDE",
     image: "/team/r1.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
+
   {
-    name: "Peeyush Dubey",
-    position: "CMO at Tech Mahindra",
+    name: "Viswanathan Anand",
+    position: "Chess Grandmaster",
+    image: "/team/r2.svg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
+  },
+  {
+    name: "Sachin Vyas",
+    position: "Co-Founder At Upside Health",
     image: "/team/sachin.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
   {
-    name: "Peeyush Dubey",
-    position: "CMO at Tech Mahindra",
-    image: "/team/r1.svg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
-  },
-  {
-    name: "Peeyush Dubey",
-    position: "CMO at Tech Mahindra",
-    image: "/team/r2.svg",
+    name: "Nick Mason",
+    position: "CEO & Founder At Turtl",
+    image: "/team/nick.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
@@ -77,44 +106,77 @@ const Members = [
 
 const Mentors = [
   {
-    name: "Peeyush Dubey",
-    position: "CMO at Tech Mahindra",
-    image: "/team/peyush.svg",
+    name: "Anirudh Akella",
+    position: <div>Partnerships & Growth Lead <br/> @ Etherspot</div>,
+    image: "/team/Anirudh 1.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
   {
-    name: "Peeyush Dubey",
-    position: "CMO at Tech Mahindra",
-    image: "/team/peyush.svg",
+    name: "Kabir Punde",
+    position: (
+      <div>
+        Founder <br /> @ Invrse Digital and Studio Griot
+      </div>
+    ),
+    image: "/team/Kabir Punde 1.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
   {
-    name: "Peeyush Dubey",
-    position: "CMO at Tech Mahindra",
-    image: "/team/peyush.svg",
+    name: "Kunal Davey",
+    position: (
+      <div>
+        Indirect Tax Transformation Manager <br /> @ a Big4 Consulting Firm
+      </div>
+    ),
+    image: "/team/Kunal_Photo 1.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
   {
-    name: "Peeyush Dubey",
-    position: "CMO at Tech Mahindra",
-    image: "/team/peyush.svg",
+    name: "Lokesh Natoo",
+    position: (
+      <div>
+        {" "}
+        India Center Head <br /> @ Altus Group
+      </div>
+    ),
+    image: "/team/Lokesh 1.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
   {
-    name: "Peeyush Dubey",
-    position: "CMO at Tech Mahindra",
-    image: "/team/peyush.svg",
+    name: "Raja Roy",
+    position: (
+      <div>
+        VP - Digital Transformation <br /> @ TechMahindra
+      </div>
+    ),
+    image: "/team/Raja-Photo 1.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
   {
-    name: "Peeyush Dubey",
-    position: "CMO at Tech Mahindra",
-    image: "/team/peyush.svg",
+    name: "Vijay Nadadur",
+    position: (
+      <div>
+        {" "}
+        CEO <br /> @ Stride.ai
+      </div>
+    ),
+    image: "/team/Vijay (1) 1.svg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
+  },
+  {
+    name: "Suryadeep Verma",
+    position: (
+      <div>
+        Chief Marketing Officer <br /> @ Comviva
+      </div>
+    ),
+    image: "/team/image 58.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
@@ -134,7 +196,7 @@ const TeamSection = () => {
           <CarouselContent className="gap-x-4">
             {Mentors.map((card, index) => (
               <CarouselItem key={index} className="lg:basis-1/5 ">
-                <TeamCard member={card} />
+                <MentorCard member={card} />
               </CarouselItem>
             ))}
           </CarouselContent>

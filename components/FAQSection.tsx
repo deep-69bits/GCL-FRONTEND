@@ -29,49 +29,49 @@ const FAQSection = () => {
   const [faqNumber, setFaqNumber] = useState(-1);
   const FAQS = [
     {
-      question: "What is Next In 2.0?",
+      question: "What is Global Chess HackFest?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat modi nobis facilis sit! Ad inventore rerum aliquid iure quo.",
+        "The Global Chess HackFest, hosted by Tech Mahindra - Global Chess League, is a pioneering global hackathon uniting chess enthusiasts worldwide to generate exceptional concepts and solutions for the chess community. Participants have the freedom to explore various areas such as business, community development, or technical aspects of the game, fostering innovation and creativity.",
     },
     {
-      question: "What is Next In 2.0?",
+      question: "Who can participate in Global Chess HackFest?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat modi nobis facilis sit! Ad inventore rerum aliquid iure quo.",
+        "The Global Chess HackFest welcomes individuals and teams from across the globe, regardless of whether they're startups, professionals, students, or freelancers. As long as you're passionate about chess and possess a desire for innovation, this hackathon is the perfect opportunity for you to participate.",
     },
     {
-      question: "What is Next In 2.0?",
+      question: "How will the hackathon be conducted?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat modi nobis facilis sit! Ad inventore rerum aliquid iure quo.",
+        "The Global Chess HackFest involves several phases. Teams will first register online and submit their ideas. Those selected will then move to the online phase for prototype development. The top teams will receive mentorship sessions and present their creations to a panel of judges comprising representatives from the chess and technology sectors.",
     },
     {
-      question: "What is Next In 2.0?",
+      question: "What are the prizes for the winners?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat modi nobis facilis sit! Ad inventore rerum aliquid iure quo.",
+        "Total prize pool of 5000 USD along with cloud credits and merchandise for the    participants",
     },
     {
-      question: "What is Next In 2.0?",
+      question: "Is there any participation fee?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat modi nobis facilis sit! Ad inventore rerum aliquid iure quo.",
+        "There is no entry fee required to participate in the Global Chess HackFest. It is open to all passionate innovators at no cost.",
     },
     {
-      question: "What is Next In 2.0?",
+      question: "When will the winners be announced?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat modi nobis facilis sit! Ad inventore rerum aliquid iure quo.",
+        "The winners of the Global Chess HackFest will be revealed following the grand finale in early June. A comprehensive timeline will be available on both the website and social media platforms for reference.",
     },
     {
-      question: "What is Next In 2.0?",
+      question: "How can I register and participate?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat modi nobis facilis sit! Ad inventore rerum aliquid iure quo.",
+        "To join, just sign up on the Global Chess HackFest website during the registration period. Teams can consist of up to four members, and individuals without a team can explore public teams to join.",
     },
     {
-      question: "What is Next In 2.0?",
+      question: "Where can I get the support and answers to my queries?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat modi nobis facilis sit! Ad inventore rerum aliquid iure quo.",
+        "If you have any inquiries or require assistance, don't hesitate to contact us at contact@globalchessleague.com or via the Discord server after you've registered for the event. Our committed team is available to support you throughout your journey in the hackathon.",
     },
   ];
   return (
     <div className="bg-black  flex flex-col items-center text-center gap-8  pt-14 pb-16 lg:px-10 px-4 text-white">
-      <Title variant="pink">STILL HAVE DOUBTS? FAQS</Title>
+      <Title variant="pink">FREQUENTLY ASKED QUESTIONS (FAQS)</Title>
       <div className="grid grid-flow-row  lg:grid-cols-2 grid-cols-1 w-full lg:gap-10 gap-6 gap-x-20">
         {FAQS.map((item, index) => {
           return (

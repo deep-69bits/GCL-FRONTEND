@@ -87,7 +87,7 @@ const ContentBox: React.FC<ContentBoxProps> = ({
           <p className="text-lg text-gray-400">{description}</p>
         </div>
         <div className="self-start">
-          <img src={icon} alt={title} className="w-12 h-12" />
+          <img src={icon} alt={title} className="" />
         </div>
       </div>
     );
@@ -123,7 +123,7 @@ const ContentBox: React.FC<ContentBoxProps> = ({
            <p className="text-lg text-gray-400">{description}</p>
          </div>
          <div className="self-start">
-           <img src={icon} alt={title} className="w-12 h-12" />
+           <img src={icon} alt={title}  />
          </div>
        </div>
      );
@@ -136,7 +136,7 @@ const ContentBox: React.FC<ContentBoxProps> = ({
         <p className="text-lg text-gray-400">{description}</p>
       </div>
       <div className="self-start">
-        <img src={icon} alt={title} className="w-12 h-12" />
+        <img src={icon} alt={title}  />
       </div>
     </div>
   );
