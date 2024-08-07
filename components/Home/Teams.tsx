@@ -14,27 +14,27 @@ const GradientBorder = ({ children }: { children: React.ReactNode }) => {
 
 const TeamsData = [
   {
-    text: "",
+    text: "Triveni Continental Kings",
     image: "/ourteams/image 68.svg",
   },
   {
-    text: "",
+    text: "upGrad Mumba Masters",
     image: "/ourteams/image 69.svg",
   },
   {
-    text: "",
+    text: "Ganges Grandmasters",
     image: "/ourteams/image 70.svg",
   },
   {
-    text: "",
+    text: "SG Alpine Warriors",
     image: "/ourteams/image 71.svg",
   },
   {
-    text: "",
+    text: "Chingari Gulf Titans",
     image: "/ourteams/image 72.svg",
   },
   {
-    text: "",
+    text: "Balan Alaskan Knights",
     image: "/ourteams/image 73.svg",
   },
 ];
@@ -43,12 +43,12 @@ const Teams = () => {
   return (
     <div className="bg-white  w-full flex flex-col items-center  gap-8  py-20 lg:px-10 px-4 text-black">
       <Title variant="pink">OUR TEAMS</Title>
-      <div className="grid grid-flow-row lg:grid-cols-3 grid-cols-1 gap-10">
+      <div className="grid grid-flow-row lg:grid-cols-3 grid-cols-1 gap-10 lg:w-fit w-full">
         {TeamsData.map((item: any, index: number) => {
           return (
-            <div key={index}>
+            <div key={index} className="lg:max-w-[250px] w-full">
               <GradientBorder>
-                <div className="p-10  flex flex-col items-center justify-center h-[250px]">
+                <div className="p-10  flex flex-col items-center justify-center  h-[280px]">
                   <Image
                     src={item.image}
                     alt=""
@@ -58,7 +58,9 @@ const Teams = () => {
                   />
                 </div>
               </GradientBorder>
-              <div className="text-2xl text-[#ED00B8]"></div>
+              <div className="text-2xl text-center mt-2 font-semibold text-[#ED00B8]">
+                {item.text}
+              </div>
             </div>
           );
         })}
