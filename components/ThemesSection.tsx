@@ -43,12 +43,22 @@ export const ThemesSection = () => {
           return (
             <div
               key={index}
-              className="grid grid-flow-col cursor-pointer grid-rows-3 items-center h-full px-10 border bg-gradient-to-b from-black via-[#3B193D] to-[#3B193D]  py-10 gap-4 text-center"
+              className="grid group flip-card grid-flow-col cursor-pointer grid-rows-3 items-center h-full px-10 border bg-gradient-to-b from-black via-[#3B193D] to-[#3B193D]  py-10 gap-4 text-center"
             >
               <h5 className="text-xl text-white font-bold ">{item.title}</h5>
-              <div className="text-[#ED00B8] underline ">Know More</div>
-              <Image className="m-auto mb-5" src={item.logo} alt="" width={80} height={80} />
-              {/* <h6 className="text-sm font-[400]">{item.description}</h6> */}
+              <div className="text-[#ED00B8] group-hover:hidden underline ">
+                Know More
+              </div>
+              <h6 className="text-sm  text-[#ED00B8] group-hover:block hidden  font-[400]">
+                {item.description}
+              </h6>
+              <Image
+                className="m-auto mb-5"
+                src={item.logo}
+                alt=""
+                width={80}
+                height={80}
+              />
             </div>
           );
         })}

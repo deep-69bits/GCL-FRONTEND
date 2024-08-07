@@ -74,3 +74,13 @@
   top: 0;
   z-index: 100;
 }
+
+.flip-card {
+  transition: transform 1s; /* Adds a 1-second transition effect to the transform property */
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover {
+  transform: rotateY(360deg);
+}
+
