@@ -62,14 +62,14 @@ const Members = [
   {
     name: "Peeyush Dubey",
     position: "CMO at Tech Mahindra",
-    image: "/team/peyush.svg",
+    image: "/team/r1.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
   {
     name: "Peeyush Dubey",
     position: "CMO at Tech Mahindra",
-    image: "/team/peyush.svg",
+    image: "/team/r2.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },

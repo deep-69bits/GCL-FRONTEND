@@ -5,10 +5,10 @@ const HeroSection = () => {
   return (
     <div className="lg:bg-[#3B193D] bg-heroMobile text-white bg-cover  bg-no-repeat lg:py-20  py-10 lg:px-10 px-4">
       <div className="lg:flex  items-center justify-between ">
-        <div className="flex  w-1/4 flex-col lg:items-start items-center">
+        <div className="flex  lg:w-1/4 w-full flex-col lg:items-start items-center">
           <Image
             src={"/Logo_Coloured.svg"}
-            className="w-4 lg:w-full mb-2"
+            className="w-4 lg:w-full w-full mb-2"
             alt=""
             width={300}
             height={600}
