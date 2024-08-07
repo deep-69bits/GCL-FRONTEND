@@ -21,8 +21,6 @@ const TeamCard = ({
 }) => {
   return (
     <div className="flex flex-col bg-gradient-to-b from-black  to-[#3B193D] items-center gap-2">
-      <div className="font-bold text-xl text-center">{member.name}</div>
-      <div className="font-medium text-center">{member.position}</div>
       <img
         alt={member.name}
         height={200}
@@ -49,8 +47,6 @@ const MentorCard = ({
 }) => {
   return (
     <div className="flex flex-col bg-gradient-to-b from-black  to-[#3B193D] items-center gap-2">
-      <div className="font-bold text-xl text-center">{member.name}</div>
-      <div className="font-medium text-center">{member.position}</div>
       <img
         alt={member.name}
         height={200}
@@ -69,14 +65,14 @@ const Members = [
   {
     name: "Peeyush Dubey",
     position: "CMO at Tech Mahindra",
-    image: "/team/peyush.svg",
+    image: "/team/j1.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
   {
     name: "Arkady Dvorkovich",
     position: "President At FIDE",
-    image: "/team/r1.svg",
+    image: "/team/j2.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
@@ -84,21 +80,21 @@ const Members = [
   {
     name: "Viswanathan Anand",
     position: "Chess Grandmaster",
-    image: "/team/r2.svg",
+    image: "/team/j3.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
   {
     name: "Sachin Vyas",
     position: "Co-Founder At Upside Health",
-    image: "/team/sachin.svg",
+    image: "/team/j4.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
   {
     name: "Nick Mason",
     position: "CEO & Founder At Turtl",
-    image: "/team/nick.svg",
+    image: "/team/j5.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
@@ -107,8 +103,12 @@ const Members = [
 const Mentors = [
   {
     name: "Anirudh Akella",
-    position: <div>Partnerships & Growth Lead <br/> @ Etherspot</div>,
-    image: "/team/Anirudh 1.svg",
+    position: (
+      <div>
+        Partnerships & Growth Lead <br /> @ Etherspot
+      </div>
+    ),
+    image: "/team/m1.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
@@ -119,7 +119,7 @@ const Mentors = [
         Founder <br /> @ Invrse Digital and Studio Griot
       </div>
     ),
-    image: "/team/Kabir Punde 1.svg",
+    image: "/team/m2.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
@@ -130,7 +130,7 @@ const Mentors = [
         Indirect Tax Transformation Manager <br /> @ a Big4 Consulting Firm
       </div>
     ),
-    image: "/team/Kunal_Photo 1.svg",
+    image: "/team/m3.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
@@ -142,7 +142,18 @@ const Mentors = [
         India Center Head <br /> @ Altus Group
       </div>
     ),
-    image: "/team/Lokesh 1.svg",
+    image: "/team/m4.svg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
+  },
+  {
+    name: "Suryadeep Verma",
+    position: (
+      <div>
+        Chief Marketing Officer <br /> @ Comviva
+      </div>
+    ),
+    image: "/team/m7.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
@@ -153,7 +164,7 @@ const Mentors = [
         VP - Digital Transformation <br /> @ TechMahindra
       </div>
     ),
-    image: "/team/Raja-Photo 1.svg",
+    image: "/team/m5.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },
@@ -165,18 +176,7 @@ const Mentors = [
         CEO <br /> @ Stride.ai
       </div>
     ),
-    image: "/team/Vijay (1) 1.svg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
-  },
-  {
-    name: "Suryadeep Verma",
-    position: (
-      <div>
-        Chief Marketing Officer <br /> @ Comviva
-      </div>
-    ),
-    image: "/team/image 58.svg",
+    image: "/team/m6.svg",
     description:
       "Lorem ipsum dolor sit amet consectetur. Diam vestibulum auctor sit nulla elementum ipsum. Rutrum purus a pharetra ...",
   },

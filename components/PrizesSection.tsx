@@ -101,7 +101,7 @@ const PrizesSection = () => {
           return (
             <div key={index} className="flex flex-col gap-4">
               <div className="flex m-auto gap-4">
-                <button className="text-red hover:before:bg-red text-white  w-60 bg-gradient-to-r from-[#432B74] to-[#ED00B8] relative h-[50px]  overflow-hidden border  bg-white px-3  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#EBFF00] before:transition-all before:duration-500 hover:text-white hover:shadow-[#EBFF00] hover:before:left-0 hover:before:w-full">
+                <button className="text-red hover:before:bg-red text-white  w-60 bg-gradient-to-r from-[#432B74] to-[#ED00B8] relative h-[50px]  overflow-hidden border  bg-white px-3  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:shadow-[#EBFF00] hover:before:left-0 hover:before:w-full">
                   <span className="relative z-10">{item.title}</span>
                 </button>
               </div>
