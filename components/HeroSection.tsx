@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="flex  lg:w-1/4 w-full flex-col lg:items-start items-center">
           <Image
             src={"/Logo_Coloured.svg"}
-            className="w-4 lg:w-full w-full mb-2"
+            className=" lg:w-full  mb-2"
             alt=""
             width={300}
             height={600}
@@ -33,7 +33,7 @@ const HeroSection = () => {
         <Image
           src={"/next-move.svg"}
           alt=""
-          className="lg:-translate-x-40  z-0"
+          className="lg:-translate-x-40  lg:block hidden z-0"
           width={600}
           height={600}
         />
