@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[90vh] lg:bg-seasonBg bg-cover">
+    <div className="w-full  lg:bg-seasonBg bg-cover">
       <a href="https://globalchessleague.com/tech-mahindra-global-chess-league-to-host-its-second-edition-in-london/" target="__blank">
         <Image
           src={"/knowmore.webp"}
